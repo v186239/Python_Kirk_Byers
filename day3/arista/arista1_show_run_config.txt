@@ -1,0 +1,100 @@
+arista1#show run
+! Command: show running-config
+! device: arista1 (vEOS, EOS-4.20.10M)
+!
+! boot system flash:/vEOS-lab.swi
+!
+transceiver qsfp default-mode 4x10G
+!
+hostname arista1
+!
+ntp server 130.126.24.24
+!
+spanning-tree mode rapid-pvst
+!
+aaa authorization exec default local
+!
+no aaa root
+!
+username admin privilege 15 role network-admin secret 5 $1$aM6w809x$tgkc6ZGhcScvELVKVHq3n0
+username admin1 privilege 15 secret 5 $1$7kD0oS/t$wXhtTFwnWwnlPFKWwXoJ70
+username eapi secret 5 $1$FIOFmaYx$FVZOCJ71hnXLN7HPXis3M.
+username pyclass privilege 15 secret 5 $1$C3VfUfcO$86t4iqCX60yW.NIR8d2Lh0
+!
+clock timezone America/Los_Angeles
+!
+vlan 2-7
+!
+vlan 225
+   name green
+!
+vlan 226
+   name red
+!
+vlan 620
+   name blue620
+!
+vlan 621
+   name blue621
+!
+vlan 622
+   name blue622
+!
+vlan 623
+   name blue623
+!
+vlan 770
+   name Will_Rivera_green_770
+!
+vlan 771
+   name Will_Rivera_green_771
+!
+vlan 772
+   name Will_Rivera_green_772
+!
+vlan 800
+   name blue800
+!
+vlan 801
+   name blue801
+!
+vlan 802
+   name blue802
+!
+interface Ethernet1
+   spanning-tree portfast
+   spanning-tree cost 1
+!
+interface Ethernet2
+   switchport access vlan 2
+!
+interface Ethernet3
+   switchport access vlan 3
+!
+interface Ethernet4
+   switchport access vlan 4
+!
+interface Ethernet5
+   switchport access vlan 5
+!
+interface Ethernet6
+   switchport access vlan 6
+!
+interface Ethernet7
+   switchport access vlan 7
+!
+interface Management1
+   shutdown
+!
+interface Vlan1
+   ip address 10.220.88.28/24
+!
+ip route 0.0.0.0/0 10.220.88.1
+!
+ip routing
+!
+management api http-commands
+   no shutdown
+!
+end
+arista1#
