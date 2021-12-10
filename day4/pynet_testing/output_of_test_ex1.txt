@@ -1,0 +1,16 @@
+============================= test session starts ==============================
+platform linux -- Python 3.7.10, pytest-6.2.5, py-1.11.0, pluggy-1.0.0 -- /home/student9/VENV/py3_venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/student9/Python_Kirk_Byers/day4/testing
+plugins: pylama-8.3.3
+collecting ... collected 7 items
+
+test_ex1.py::test_sum PASSED
+test_ex1.py::test_product PASSED
+test_ex1.py::test_product_params[77-0-0] PASSED
+test_ex1.py::test_product_params[13-13-169] PASSED
+test_ex1.py::test_product_params[-1--1-1] PASSED
+test_ex1.py::test_product_params[-7-7--49] PASSED
+test_ex1.py::test_sum2 PASSED
+
+============================== 7 passed in 0.03s ===============================

@@ -1,0 +1,11 @@
+============================= test session starts ==============================
+platform linux -- Python 3.7.10, pytest-6.2.5, py-1.11.0, pluggy-1.0.0 -- /home/student9/VENV/py3_venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/student9/Python_Kirk_Byers/day4/testing
+plugins: pylama-8.3.3
+collecting ... collected 2 items
+
+test_ex2.py::test_prompt PASSED
+test_ex2.py::test_show_ip_int_brief PASSED
+
+============================== 2 passed in 5.69s ===============================
