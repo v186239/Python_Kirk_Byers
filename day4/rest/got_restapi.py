@@ -4,10 +4,10 @@ import pdbr
 from rich import print
 
 from urllib3.exceptions import InsecureRequestWarning
-
+import pdbr
+pdbr.set_trace()
 # Ignore insecure warings for sites with self-signed certificates
 requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
-# pdbr.set_trace()
 
 
 def main():
