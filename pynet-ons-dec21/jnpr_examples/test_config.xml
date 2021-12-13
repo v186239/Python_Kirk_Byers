@@ -1,0 +1,12 @@
+<configuration>
+    <system>                    
+        <ntp>                   
+            <server>            
+                <name>130.126.24.24</name>
+            </server>           
+            <server>            
+                <name>152.2.21.1</name>
+            </server>           
+        </ntp> 
+    </system>                    
+</configuration>
