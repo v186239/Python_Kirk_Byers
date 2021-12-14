@@ -36,4 +36,4 @@ jobs:
 
       - name: Run Tests
         run: |
-          py.test -v -s ../../day4/pynet_testing/test_ex1.py
+          py.test -v -s day4/pynet_testing/test_ex1.py
