@@ -28,11 +28,11 @@ jobs:
           pwd
           ls -lRhat
          
-          black --check .
+          # black --check .
 
       - name: Run linter
         run: |
-          pylama .
+          # pylama .
 
       - name: Run Tests
         run: |
